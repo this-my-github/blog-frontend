@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Routes, Route, Link } from 'react-router-dom';
-import { Header } from './components';
+import { Header, Footer } from './components';
 
 const AppColumn = styled.div`
 	display: flex;
@@ -20,8 +20,6 @@ const Content = styled.div`
 const H2 = styled.h2`
 	text-align: center;
 `;
-
-const Footer = () => <footer>Футер</footer>;
 
 const Main = () => <div>Main</div>;
 
