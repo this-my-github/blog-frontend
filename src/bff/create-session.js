@@ -20,6 +20,7 @@ export const createSession = (roleId) => {
 			break;
 		}
 		case ROLE.READER: {
+			break;
 		}
 
 		default:
