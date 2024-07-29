@@ -8,10 +8,10 @@
       "role_id": 0
     },
     {
-      "id": "153b",
-      "login": "anton1",
+      "id": "002",
+      "login": "anton2",
       "password": "qwerty123",
-      "registed_at": "2049-12-18 07:03",
+      "registed_at": "2024-07-01",
       "role_id": 2
     }
   ],

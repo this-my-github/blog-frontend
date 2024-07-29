@@ -1,59 +1,32 @@
-import { addUser } from './add-user';
-import { getUser } from './get-user';
-import { sessions } from './sessions';
+// import { getUser } from './api';
+import {
+	authorize,
+	logout,
+	register,
+	fetchRoles,
+	fetchUsers,
+	updateUserRole,
+	removeUser,
+} from './operations';
 
 export const server = {
-	async logout(session) {
-		sessions.remove(session);
-	},
-	async autorize(authLogin, authPassword) {
-		const user = await getUser(authLogin);
+	authorize,
+	logout,
+	register,
+	fetchUsers,
+	fetchRoles,
+	updateUserRole,
+	removeUser,
+	// async removeUser(login) {
+	// 	const user = await getUser(login);
+	// 	await deleteUser(user.id);
+	// },
+	// async getUsers() {
+	// 	return await getUsers();
+	// },
+	// async setRole(login, newRole) {
+	// 	const user = await getUser(login);
 
-		if (!user) {
-			return {
-				error: 'Такой пользователь не найден',
-				res: null,
-			};
-		}
-
-		if (authPassword !== user.password) {
-			return {
-				error: 'Неверный пароль',
-				res: null,
-			};
-		}
-
-		return {
-			error: null,
-			res: {
-				id: user.id,
-				login: user.login,
-				roleId: user.role_id,
-				session: sessions.create(user),
-			},
-		};
-	},
-	async register(regLogin, regPassword) {
-		const existedUser = await getUser(regLogin);
-
-		if (existedUser) {
-			return {
-				error: 'Такой логин уже занят',
-				res: null,
-			};
-		}
-
-		const user = await addUser(regLogin, regPassword);
-		console.log(user);
-
-		return {
-			error: null,
-			res: {
-				id: user.id,
-				login: user.login,
-				roleId: user.role_id,
-				session: sessions.create(user),
-			},
-		};
-	},
+	// 	const updatedUser = await updateRole(user.id, newRole);
+	// },
 };

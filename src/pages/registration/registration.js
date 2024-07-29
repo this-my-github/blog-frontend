@@ -96,7 +96,7 @@ const RegistrationContainer = ({ className }) => {
 				/>
 				<Input
 					type="password"
-					placeholder="Проверка пароля..."
+					placeholder="Повтор пароля..."
 					{...register('passcheck', {
 						onChange: () => setServerError(null),
 					})}

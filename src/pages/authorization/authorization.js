@@ -17,8 +17,8 @@ const authFormScheme = yup.object().shape({
 		.string()
 		.required('Заполните логин')
 		.matches(/^\w+$/, 'Неверно заполнен логин. Допускаются только буквы и цифры')
-		.min(3, 'Неверныо заполнен  логин. Минимум 3 символа')
-		.max(15, 'Неверныо заполнен  логин. Максимум 15 символов'),
+		.min(3, 'Неверно заполнен  логин. Минимум 3 символа')
+		.max(15, 'Неверно заполнен  логин. Максимум 15 символов'),
 	password: yup
 		.string()
 		.required('Заполните пароль')
@@ -26,8 +26,8 @@ const authFormScheme = yup.object().shape({
 			/^[\w#%]+$/,
 			'Неверно заполнен пароль. Допускаются буквы и цифры и знаки # %',
 		)
-		.min(6, 'Неверныо заполнен пароль. Минимум 6 символа')
-		.max(30, 'Неверныо заполнен пароль. Максимум 30 символов'),
+		.min(6, 'Неверно заполнен пароль. Минимум 6 символа')
+		.max(30, 'Неверно заполнен пароль. Максимум 30 символов'),
 });
 
 const StyledLink = styled(Link)`
@@ -59,7 +59,7 @@ const AuthorizationContainer = ({ className }) => {
 	useResetForm(reset);
 
 	const onSubmit = ({ login, password }) => {
-		server.autorize(login, password).then(({ error, res }) => {
+		server.authorize(login, password).then(({ error, res }) => {
 			if (error) {
 				setServerError(`Ошибка запроса: ${error}`);
 				return;
