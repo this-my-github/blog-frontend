@@ -1,32 +1,25 @@
-Области хранения данных:
+# Приложение Блог (в разработке)
 
--   база данных на json-server
--   BFF
--   redux store
+## Страницы:
 
-Сущности приложения:
+### Главная (в разработке);
 
--   пользователь: БД (список пользователей), BFF (сессия текущего), стор (отображение
-    в браузере)
--   роль пользователя: БД (список ролей), BFF (сессия пользователя с ролью), стор
-    (использование на клиенте)
--   статья: БД (список статей), стор (отображение в браузере)
--   комментарии: БД (список комментариев), стор (отображение в браузере)
+### Статья;
 
-Таблицы БД:
+### Новая статья (в разработке);
 
--   пользователи - users: id / login / password / registed_at / role_id
--   роли - roles: id / name
--   статьи - posts: id / title / image_url / content / published_at
--   комментарии - comments: id / author_id / post_id / content
+### Авторизация;
 
-Схема состояния на BFF:
+### Регистрация;
 
--   сессия текущего пользователя: login / password / role
+### Пользователи;
 
-Схема для Redux Store (на клиенте):
+### Страница с ошибкой о том, что страница по заданному адресу не существует (в разработке);
 
--   user: id / login / roleId / session
--   posts: массив post: id / title / imageUrl / publishedAt / commentsCount
--   post: id / title / imageUrl / content / publishedAt / comments: массив comment: id / author / content / publishedAt
--   users: массив user: id / login / registeredAt / role
+### Страница с ошибкой о том, что у пользователя нет доступа к заданной странице (в разработке).
+
+## Всего у пользователя может быть 4 роли: Администратор, Модератор, Читатель, Гость.
+
+## Используемые технологии:
+
+### Create React App, Styled Components, React Hook Form и Yup, JSON Server, React Router, Redux, Redux Thunk, React Redux
