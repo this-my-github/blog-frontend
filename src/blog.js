@@ -20,7 +20,14 @@ const Page = styled.div`
 	padding: 120px 0 20px;
 `;
 
-const Main = () => <div>Main</div>;
+const Main = () => (
+	<div>
+		<div>Main</div>
+		<div>
+			<Link to="/post/001">Первый пост</Link>
+		</div>
+	</div>
+);
 
 const Roles = () => <div>Roles</div>;
 const Error = () => <div>Error</div>;
@@ -49,15 +56,11 @@ export const Blog = () => {
 		<AppColumn>
 			<Header />
 			<Page>
-				<Link to="/users">Пользователи</Link>
-				<Link to="/posts">Посты</Link>
-				<Link to="/roles">Роли</Link>
-
 				<Routes>
 					<Route path="/" element={<Main />} />
 					<Route path="/login" element={<Authorization />} />
 					<Route path="/register" element={<Registration />} />
-					<Route path="/post" element={<div>Посты</div>} />
+					<Route path="/post" element={<div>Новый пост</div>} />
 					<Route path="/post/:id" element={<Post />} />
 
 					<Route path="/roles" element={<Roles />} />
