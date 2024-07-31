@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Routes, Route, Link } from 'react-router-dom';
-import { Header, Footer } from './components';
+import { Header, Footer, Modal } from './components';
 import { Authorization, Post, Registration, Users } from './pages';
 import { useLayoutEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -69,8 +69,8 @@ export const Blog = () => {
 					<Route path="*" element={<Error />} />
 				</Routes>
 			</Page>
-
 			<Footer />
+			<Modal />
 		</AppColumn>
 	);
 };

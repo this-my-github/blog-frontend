@@ -72,25 +72,25 @@
   ],
   "comments": [
     {
-      "id": "4b34",
-      "author_id": "001",
+      "id": "feb0",
+      "author_id": "d9be",
       "post_id": "001",
-      "published_at": "2051-10-28 07:35",
+      "published_at": "2041-05-25 04:33",
+      "content": "Мой первый комментарий"
+    },
+    {
+      "id": "92f2",
+      "author_id": "d9be",
+      "post_id": "001",
+      "published_at": "2057-07-06 12:06",
       "content": "Мой второй комментарий"
     },
     {
-      "id": "6585",
-      "author_id": "001",
+      "id": "af9c",
+      "author_id": "d9be",
       "post_id": "001",
-      "published_at": "2039-01-18 12:00",
-      "content": "Мой второй комментарий 3"
-    },
-    {
-      "id": "1a02",
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2053-10-23 16:09",
-      "content": "Мой второй комментарий 4"
+      "published_at": "2042-11-29 08:06",
+      "content": "Мой второй комментарий 2"
     }
   ],
   "sessions": [
