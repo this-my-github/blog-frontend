@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Header, Footer, Modal } from './components';
-import { Authorization, Post, Registration, Users } from './pages';
+import { Authorization, Main, Post, Registration, Users } from './pages';
 import { useLayoutEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setUser } from './actions';
@@ -19,15 +19,6 @@ const AppColumn = styled.div`
 const Page = styled.div`
 	padding: 120px 0 20px;
 `;
-
-const Main = () => (
-	<div>
-		<div>Main</div>
-		<div>
-			<Link to="/post/001">Первый пост</Link>
-		</div>
-	</div>
-);
 
 const Roles = () => <div>Roles</div>;
 const Error = () => <div>Error</div>;

@@ -22,7 +22,7 @@ const FooterContainer = ({ className }) => {
 		<footer className={className}>
 			<div>
 				<div>Блог веб разработчика</div>
-				<div>web@developer.ru</div>
+				<div>this_mail_for_everything@mail.ru</div>
 			</div>
 			<div>
 				<div>

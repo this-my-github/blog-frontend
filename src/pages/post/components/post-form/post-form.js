@@ -77,6 +77,8 @@ export const PostFrom = styled(PostFormContainer)`
 	& img {
 		float: left;
 		margin: 0 20px 10px 0;
+		width: 280px;
+		height: 280px;
 	}
 
 	& .post-text {
