@@ -12,7 +12,14 @@
       "login": "ivan",
       "password": "qwe123",
       "registed_at": "2046-10-28 10:31",
-      "role_id": 2
+      "role_id": 1
+    },
+    {
+      "login": "petr",
+      "password": "qwe123",
+      "registed_at": "2043-10-24 23:53",
+      "role_id": 2,
+      "id": "L2fvMQh"
     }
   ],
   "roles": [
@@ -114,13 +121,6 @@
       "content": "Первый комментарий 3"
     },
     {
-      "id": "6a11",
-      "author_id": "d9be",
-      "post_id": "001",
-      "published_at": "2052-11-09 02:31",
-      "content": "Первый комментарий 4"
-    },
-    {
       "id": "34b3",
       "author_id": "9b0c",
       "post_id": "002",
@@ -133,6 +133,13 @@
       "post_id": "002",
       "published_at": "2038-03-10 17:07",
       "content": "Красивая картинка!"
+    },
+    {
+      "author_id": "d9be",
+      "post_id": "002",
+      "published_at": "2064-11-21 10:29",
+      "content": "Новый комментарий",
+      "id": "7wz8my6"
     }
   ],
   "sessions": [
@@ -148,7 +155,7 @@
       }
     },
     {
-      "hash": "0.59025001289413436822428593586664646863937377929688",
+      "hash": "0.03281636953395228317731380229815840721130371093750",
       "user": {
         "id": "d9be",
         "login": "sergey",
@@ -156,7 +163,18 @@
         "registedAt": "2047-02-13 13:31",
         "roleId": 0
       },
-      "id": "pn-qZB6"
+      "id": "muURzwj"
+    },
+    {
+      "hash": "0.31250023544534122343918625119840726256370544433594",
+      "user": {
+        "id": "9b0c",
+        "login": "ivan",
+        "password": "qwe123",
+        "registedAt": "2046-10-28 10:31",
+        "roleId": 1
+      },
+      "id": "0Hq3WqG"
     }
   ]
 }
