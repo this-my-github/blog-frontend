@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useState } from 'react';
 import { useMatch, useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { Comments, PostContent, PostFrom } from './components';
+import { Comments, PostContent, PostForm } from './components';
 import { useServerRequest } from '../../hooks';
 import { RESET_POST_DATA, loadPostAsync } from '../../actions';
 import { selectPost } from '../../selectors';
@@ -43,7 +43,7 @@ const PostContainer = ({ className }) => {
 		isCreating || isEditing ? (
 			<PrivateContent access={[ROLE.ADMIN]} serverError={error}>
 				<div className={className}>
-					<PostFrom post={post} />
+					<PostForm post={post} />
 				</div>
 			</PrivateContent>
 		) : (

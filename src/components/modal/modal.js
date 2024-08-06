@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import { Button } from '../button/button';
 import { useSelector } from 'react-redux';
 import {
@@ -7,6 +6,7 @@ import {
 	selectModalOnConfirm,
 	selectModalText,
 } from '../../selectors';
+import styled from 'styled-components';
 
 const ModalContainer = ({ className }) => {
 	const isOpen = useSelector(selectModalIsOpen);

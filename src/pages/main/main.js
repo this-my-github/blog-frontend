@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
-import styled from 'styled-components';
 import { useServerRequest } from '../../hooks';
 import { Pagination, PostCard, Search } from './components';
 import { PAGINATION_LIMIT } from '../../constants';
 import { debounce, getLastPageFromLinks } from './utils';
+import styled from 'styled-components';
 
 const MainContainer = ({ className }) => {
 	const [posts, setPosts] = useState([]);
@@ -52,8 +52,6 @@ const MainContainer = ({ className }) => {
 					<div className="no-posts-found">Статьи не найдены</div>
 				)}
 			</div>
-
-			{/* <Pagination page={page} lastPage={lastPage} setPage={setPage} /> */}
 
 			{lastPage > 1 && (
 				<Pagination page={page} lastPage={lastPage} setPage={setPage} />

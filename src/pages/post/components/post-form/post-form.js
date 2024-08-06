@@ -5,8 +5,9 @@ import { Icon, Input } from '../../../../components';
 import { SpecialPanel } from '../special-panel/special-panel';
 import { sanitizeContent } from './utils';
 import { savePostAsync } from '../../../../actions';
-import styled from 'styled-components';
 import { useServerRequest } from '../../../../hooks';
+import { PROP_TYPE } from '../../../../constants';
+import styled from 'styled-components';
 
 const PostFormContainer = ({
 	className,
@@ -80,7 +81,7 @@ const PostFormContainer = ({
 	);
 };
 
-export const PostFrom = styled(PostFormContainer)`
+export const PostForm = styled(PostFormContainer)`
 	& img {
 		float: left;
 		margin: 0 20px 10px 0;
@@ -95,3 +96,7 @@ export const PostFrom = styled(PostFormContainer)`
 		white-space: pre-line;
 	}
 `;
+
+PostForm.propTypes = {
+	post: PROP_TYPE.POST.isRequired,
+};
